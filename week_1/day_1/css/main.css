@@ -1,0 +1,30 @@
+#name {
+    color:white;
+    text-align: center;
+    font-size:300%
+}
+
+#github {
+    text-align:center;
+    color:black;
+    font-size:100%
+}
+
+#paragraph {
+    text-align:left;
+    color:black;
+    font: size 20px;
+}
+
+#picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+#instructions {
+    text-align:left;
+    color:brown;
+    font-size: 20px;
+}
