@@ -1,0 +1,147 @@
+﻿Diagnose log at 2023-05-30T11:43:45Z
+
+AppPath: /usr/local/bin/git-credential-manager
+InstallDir: /usr/local/bin/
+Version: 2.1.2
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Linux
+OSVersion: Linux DESKTOP-S6T3UDU 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Reading environment variables... OK
+ Variables:
+PWD=/home/jaell/ix/homework
+LESSOPEN=| /usr/bin/lesspipe %s
+PATH=/home/jaell/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2204.2.31.0_x64__79rhkp1fndgsc:/mnt/c/Python311/Scripts/:/mnt/c/Python311/:/mnt/c/Program Files/Zulu/zulu-8-jre/bin/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/msys64/mingw64/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Calibre2/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/cygwin64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/Neovim/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/jaell/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/jaell/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/jaell/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/jaell/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/Users/jaell/AppData/Roaming/npm:/snap/bin
+LANG=C.UTF-8
+DISPLAY=:0
+WSL_INTEROP=/run/WSL/1289_interop
+TERM=xterm-256color
+NAME=DESKTOP-S6T3UDU
+HOME=/home/jaell
+HOSTTYPE=x86_64
+SHELL=/bin/bash
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+WSL2_GUI_APPS_ENABLED=1
+GIT_TRACE2_PARENT_SID=2148c561-c1e5-4bb0-acb2-9d7a3c2a78ff
+OLDPWD=/home/jaell
+PULSE_SERVER=unix:/mnt/wslg/PulseServer
+USER=jaell
+WSL_DISTRO_NAME=Ubuntu
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+_=/usr/local/bin/git-credential-manager
+WSLENV=
+SHLVL=1
+LOGNAME=jaell
+WAYLAND_DISPLAY=wayland-0
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/tmp/'...
+Checking basic file I/O...
+Writing to temporary file '/tmp/dd0847b3b285bb576e9c97fb'... OK
+Reading from temporary file '/tmp/dd0847b3b285bb576e9c97fb'... OK
+Deleting temporary file '/tmp/dd0847b3b285bb576e9c97fb'... OK
+Testing IFileSystem instance...
+UserHomePath: /home/jaell
+UserDataDirectoryPath: /home/jaell/.gcm
+GetCurrentDirectory(): /home/jaell/ix/homework
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:37183/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.34.1'
+Locating current repository... OK
+Git repository at '/home/jaell/ix/homework/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:/home/jaell/.gitconfig	credential.helper=
+file:/home/jaell/.gitconfig	credential.helper=/usr/local/bin/git-credential-manager
+file:/home/jaell/.gitconfig	credential.credentialstore=gpg
+file:/home/jaell/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	remote.origin.url=https://github.com/jacobellerbrock/homework.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	user.email=ja.eller14@gmail.com
+file:.git/config	user.name=Jacob Ellerbrock
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /home/jaell/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /home/jaell/.local/.IdentityService/msal.cache
+KeyringCollection: 
+KeyringSchemaName: 
+KeyringSecretLabel: 
+KeyringAttribute1: (,)
+KeyringAttribute2: (,)
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
