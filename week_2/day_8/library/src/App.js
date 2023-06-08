@@ -1,27 +1,51 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/font/botstrap-icons.css'
+import { Book } from './models/book'
 import BookForm from './components/BookForm'
 import BookTable from './components/BookTable'
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import LibraryService from "./services/book-service";
 
 function App() {
 
   const [books, setBooks] = useState([]);
   const [bookToEdit, setBookToEdit] = useState(null);
 
-  function onBookCreated(book) {
-    setBookToEdit(null);
-    setBooks([...books, book]);
-    console.log(books);
+  useEffect(
+      () => {
+        if (!books.length) {
+          onInitialLoad();
+        }
+      },[]);
+
+  async function onInitialLoad() {
+    try {
+      const books = await LibraryService.fetchBooks();
+      setBooks(books);
+    } catch (err) {
+      console.log(err);
+    }
   }
 
-  function onBookDelete(book) {
-    setBooks(books.filter((x) => x.isbn !== book.isbn));
+  async function onBookCreated(book) {
+    // setBookToEdit(null);
+    // setBooks([...books, book]);
+    const newbook = await LibraryService.createBook(new Book(null, book.title, book.author, book.isbn));
+    setBooks([...books, newbook]);
   }
 
-  function onBookEdit(book) {
-    setBookToEdit(book);
-    setBooks(books.filter((x) => x.isbn !== book.isbn));
+  async function onBookDelete(book) {
+    // setBooks(books.filter((x) => x.isbn !== book.isbn));
+    await LibraryService.deleteBook(book.id);
+    setBooks(books.filter((x) => book.id !== x.id));
+  }
+
+  async function onBookEdit(book) {
+    // setBookToEdit(book);
+    // setBooks(books.filter((x) => x.isbn !== book.isbn));
+    await LibraryService.updateBook(book);
+    setBooks(books.filter((x) => book.id!== x.id));
   }
 
   return (

@@ -24,7 +24,7 @@ export default function BookTable(props) {
         }
         clearInputs();
 
-        let book = new Book(title, author, isbn);
+        let book = new Book(null, title, author, isbn);
         props.onBookCreated(book);
     }
 
